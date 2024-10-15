@@ -1,10 +1,10 @@
 import React from "react";
 import {UserCard} from "../../../../entities/user"
-import {UserCardType} from "../../../../entities/user/model/types";
 import {FavoriteButton} from "../../../../features/user/favorite-user/ui/FavoriteButton/FavoriteButton";
 import {UserListPropsType} from "../../model/types";
 import {EditUserButton} from "../../../../features/user/edit-user";
 import styles from "./styles.module.css";
+import {UserCardType} from "../../../../entities/user/model/types";
 
 export const UserList:React.FC<UserListPropsType> = ({data, isFavorite}) => {
   return (

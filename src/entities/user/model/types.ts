@@ -1,11 +1,17 @@
 import React from "react"
 
 export type UserCardType = {
-  id?: number,
+  id: number,
   username: string,
   name: string,
   email: string,
   buttonSlot?: React.ReactNode,
+}
+
+export type NewUserType = {
+  username: string,
+  name: string,
+  email: string,
 }
 
 export type UserStateType = {

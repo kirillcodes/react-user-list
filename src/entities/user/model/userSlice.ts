@@ -1,5 +1,5 @@
 import {PayloadAction, createSlice} from "@reduxjs/toolkit";
-import {UserCardType, UserStateType} from "./types";
+import {NewUserType, UserCardType, UserStateType} from "./types";
 
 const initialState: UserStateType = {
   favorites: [],
@@ -44,7 +44,7 @@ export const userSlice = createSlice({
         state.selectedUser = null;
       }
     },
-    createUser(state, action: PayloadAction<UserCardType>) {
+    createUser(state, action: PayloadAction<NewUserType>) {
       state.favorites.push({...action.payload, id: state.favorites.length + 100});
       localStorage.user = JSON.stringify(state.favorites);
     },
