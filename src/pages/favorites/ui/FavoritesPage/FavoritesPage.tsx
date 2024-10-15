@@ -10,6 +10,9 @@ import styles from "./styles.module.css";
 export const FavoritesPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
+    if (!localStorage.user) {
+      localStorage.user = {};
+    }
     dispatch(getFavoriteUsers());
   }, []);
 
@@ -25,6 +28,7 @@ export const FavoritesPage = () => {
       return favorites;
     }
   };
+
 
   return (
     <div className={styles.page}>
