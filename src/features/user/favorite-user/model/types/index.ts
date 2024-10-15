@@ -1,5 +1,5 @@
 export type FavoriteButtonPropsType = {
-  id?: number,
+  id: number,
   username: string,
   name: string,
   email: string,
