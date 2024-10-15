@@ -11,7 +11,7 @@ export const FavoritesPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     if (!localStorage.user) {
-      localStorage.user = {};
+      localStorage.user = JSON.stringify([]);
     }
     dispatch(getFavoriteUsers());
   }, []);
