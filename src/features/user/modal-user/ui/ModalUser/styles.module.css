@@ -1,0 +1,42 @@
+.overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #222;
+
+    input {
+      margin: 10px 0;
+      width: 100%;
+      background-color: #333;
+      border: 2px solid gray;
+      border-radius: 5px;
+      height: 35px;
+      width: 100%;
+      padding: 0 10px;
+      font-size: 0.9rem;
+
+      &:focus {
+        outline: none;
+        border: 2px solid lightgray;
+      }
+    }
+
+    span {
+      color: lightblue;
+    }
+  }
+}

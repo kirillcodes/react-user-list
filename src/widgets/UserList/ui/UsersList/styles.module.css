@@ -1,0 +1,14 @@
+.list {
+  display: block;
+  margin-top: 20px;
+  height: 80vh;
+  overflow: auto;
+  box-shadow: inset 0px 0px 20px #444 ;
+
+  .empty {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+}
